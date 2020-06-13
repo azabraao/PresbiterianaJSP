@@ -1,0 +1,35 @@
+$mobile: 37.4375rem;
+$tablet-portrait-up: 37.5rem;
+$tablet-landscape-up: 56.25rem;
+$desktop-up: 75rem;
+$big-desktop-up: 112.4rem;
+
+@mixin for-phone-only {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: $tablet-portrait-up) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: $tablet-landscape-up) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: $desktop-up) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: $big-desktop-up) {
+    @content;
+  }
+}

@@ -1,0 +1,17 @@
+.container {
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+@include for-tablet-portrait-up {
+  .container {
+    width: 36rem;
+  }
+}
+
+@include for-desktop-up {
+  .container {
+    width: 71.875rem;
+    padding: 0;
+  }
+}
