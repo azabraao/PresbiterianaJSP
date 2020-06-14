@@ -6,6 +6,10 @@ $(document).ready(function () {
     handleHamburguerClick() {
       $('.jsMenu').toggleClass('active');
       $('.jsHamburguer').toggleClass('active');
+
+      document.body.style.overflowY === 'hidden'
+        ? (document.body.style.overflowY = 'scroll')
+        : (document.body.style.overflowY = 'hidden');
     },
   };
 
