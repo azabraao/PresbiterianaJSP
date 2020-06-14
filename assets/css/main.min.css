@@ -74,7 +74,9 @@ body {
   scroll-behavior: smooth; }
 
 body {
-  background-color: #f0f8ff; }
+  background-color: #f0f8ff;
+  font-family: Roboto, Rubik, sans-serif;
+  color: #263b61; }
 
 .container {
   padding: 0 2rem;
@@ -285,9 +287,82 @@ body {
             display: inline; } }
 
 .page-background.bg-1 {
-  background-image: url(../img/forma-1.svg);
-  background-repeat: no-repeat;
-  background-size: 30% 100%; }
+  background-image: url(../img/forma-1-mob.svg);
+  background-repeat: no-repeat; }
+  @media (min-width: 75rem) {
+    .page-background.bg-1 {
+      background-image: url(../img/forma-1.svg);
+      background-size: 30% 100%; } }
+
+.programacao {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  padding-left: 20px; }
+  @media (min-width: 75rem) {
+    .programacao {
+      padding-left: 300px;
+      padding-top: 100px; } }
+  .programacao .programacao__inside h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 30px; }
+    @media (min-width: 75rem) {
+      .programacao .programacao__inside h2 {
+        font-size: 36px;
+        line-height: 42px; } }
+  .programacao .programacao__inside p {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+    max-width: 269px; }
+    @media (min-width: 75rem) {
+      .programacao .programacao__inside p {
+        max-width: 459px;
+        font-size: 18px;
+        line-height: 21px; } }
+    .programacao .programacao__inside p strong {
+      display: block;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px; }
+      @media (min-width: 75rem) {
+        .programacao .programacao__inside p strong {
+          font-size: 18px;
+          line-height: 21px; } }
+    .programacao .programacao__inside p time {
+      font-weight: 500;
+      display: block; }
+  .programacao .programacao__inside .button {
+    margin-top: 40px; }
+
+.button {
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #f0f8ff; }
+  @media (min-width: 75rem) {
+    .button {
+      border-radius: 10px;
+      font-size: 18px;
+      line-height: 21px; } }
+
+.button--large {
+  background: linear-gradient(341.36deg, rgba(205, 65, 13, 0.8) -52.26%, rgba(255, 150, 89, 0.8) 118.91%);
+  max-width: 289px;
+  height: 47px;
+  width: 100%; }
+  @media (min-width: 75rem) {
+    .button--large {
+      height: 59px;
+      max-width: 543px; } }
 
 .bg-text {
   background-color: #263b61; }

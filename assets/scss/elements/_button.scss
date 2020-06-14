@@ -1,0 +1,30 @@
+.button {
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #f0f8ff;
+
+  @include for-desktop-up {
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.button--large {
+  background: $bg-try;
+  max-width: 289px;
+  height: 47px;
+  width: 100%;
+
+  @include for-desktop-up {
+    height: 59px;
+    max-width: 543px;
+  }
+}
