@@ -26,9 +26,13 @@
     "glob-parent": "^3.1.0",
     "graceful-fs": "^4.2.3",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
     "gulp-image": "^6.1.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglifycss": "^1.1.0",
     "has-symbols": "^1.0.1",
     "has-value": "^1.0.0",
     "has-values": "^1.0.0",
@@ -121,6 +125,18 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/azabraao/project-starter/issues"
   },
