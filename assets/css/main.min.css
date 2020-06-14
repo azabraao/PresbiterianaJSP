@@ -611,6 +611,13 @@ body {
       .contato .contato__inside .contato__social a img {
         margin-right: 23px; }
 
+.footer {
+  padding: 39px 0; }
+  .footer .footer__inside {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px; }
+
 .button {
   border: none;
   font-style: normal;
