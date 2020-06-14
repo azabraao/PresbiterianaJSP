@@ -9,5 +9,16 @@ $(document).ready(function () {
     },
   };
 
+  const slide = {
+    init() {
+      $('.jsSlide').slick({
+        arrows: false,
+        appendDots: $('.jsSlideDots'),
+        dots: true,
+      });
+    },
+  };
+
+  slide.init();
   navbar.init();
 });

@@ -1,0 +1,103 @@
+.conheca {
+  background-image: url(../img/forma-2-mob.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+
+  @include for-desktop-up {
+    background-image: url(../img/forma-2.png);
+    background-size: 100% 1127.48px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 200px;
+    padding-bottom: 190px;
+  }
+
+  .conheca__inside {
+    .slide {
+      .slide__items {
+        .slide__item {
+          padding: 0 2px;
+          outline: none;
+
+          .slide__item-content {
+            padding-bottom: 30px;
+
+            h3 {
+              font-size: 24px;
+              line-height: 28px;
+              color: #f0f8ff;
+              margin-bottom: 15px;
+              text-transform: uppercase;
+              font-weight: bold;
+
+              @include for-desktop-up {
+                font-size: 36px;
+                line-height: 42px;
+              }
+            }
+            p {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 141.69%;
+              color: #f0f8ff;
+              max-width: 911px;
+
+              @include for-desktop-up {
+                font-size: 24px;
+                line-height: 34px;
+              }
+            }
+          }
+          .slide__item-button {
+            .button {
+              margin-left: auto;
+
+              @include for-desktop-up {
+                position: relative;
+                top: -100px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .slide__dots {
+      .slick-dots {
+        position: relative;
+        top: -35px;
+        display: flex;
+        align-items: center;
+
+        li.slick-active {
+          button {
+            opacity: 1;
+          }
+        }
+        li {
+          display: flex;
+          align-items: center;
+
+          button {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            font-size: 0;
+            background: #f0f8ff;
+            opacity: 0.5;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            border-radius: 50%;
+            width: 8px;
+            height: 11px;
+            margin-right: 7px;
+
+            @include for-desktop-up {
+              width: 12px;
+              height: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
