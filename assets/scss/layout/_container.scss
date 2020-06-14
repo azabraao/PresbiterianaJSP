@@ -1,6 +1,7 @@
 .container {
   padding: 0 2rem;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 @include for-tablet-portrait-up {
