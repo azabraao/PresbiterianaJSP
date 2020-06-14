@@ -1,0 +1,47 @@
+.contato {
+  background-image: url(../img/forma-3.png);
+  background-size: 157% 100%;
+  padding-top: 207px;
+  padding-bottom: 55px;
+  background-repeat: no-repeat;
+  margin-top: -60px;
+  background-position: left;
+
+  @include for-desktop-up {
+    background-size: 100% 100%;
+    padding: 142px 0 171px;
+  }
+
+  .contato__inside {
+    color: #ffffff;
+
+    @include for-desktop-up {
+      width: 328px;
+      margin-left: auto;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 42px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 33px;
+    }
+
+    .contato__social {
+      margin-top: 30px;
+
+      a {
+        img {
+          margin-right: 23px;
+        }
+      }
+    }
+  }
+}
