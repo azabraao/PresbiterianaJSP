@@ -1,0 +1,59 @@
+.nossa-denominacao {
+  padding: 70px 0 200px;
+
+  @include for-desktop-up {
+    padding-top: 0;
+  }
+
+  .nossa-denominacao__inside {
+    @include for-desktop-up {
+      width: fit-content;
+      margin-left: auto;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 15px;
+      font-size: 24px;
+      line-height: 28px;
+
+      @include for-desktop-up {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 20px;
+      }
+    }
+    .church-name {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 5px;
+
+      @include for-desktop-up {
+        font-size: 20px;
+        width: 420px;
+        line-height: 23px;
+      }
+    }
+    .quote {
+      margin-bottom: 40px;
+      font-size: 18px;
+      line-height: 21px;
+
+      @include for-desktop-up {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 10px;
+      }
+    }
+    .link {
+      font-size: 20px;
+      line-height: 23px;
+    }
+    .color-bg-try {
+      color: #e68559;
+    }
+  }
+}

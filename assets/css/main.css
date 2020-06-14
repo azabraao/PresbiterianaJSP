@@ -452,6 +452,52 @@ body {
             width: 12px;
             height: 12px; } }
 
+.nossa-denominacao {
+  padding: 70px 0 200px; }
+  @media (min-width: 75rem) {
+    .nossa-denominacao {
+      padding-top: 0; } }
+  @media (min-width: 75rem) {
+    .nossa-denominacao .nossa-denominacao__inside {
+      width: fit-content;
+      margin-left: auto; } }
+  .nossa-denominacao .nossa-denominacao__inside h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 28px; }
+    @media (min-width: 75rem) {
+      .nossa-denominacao .nossa-denominacao__inside h2 {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 20px; } }
+  .nossa-denominacao .nossa-denominacao__inside .church-name {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 5px; }
+    @media (min-width: 75rem) {
+      .nossa-denominacao .nossa-denominacao__inside .church-name {
+        font-size: 20px;
+        width: 420px;
+        line-height: 23px; } }
+  .nossa-denominacao .nossa-denominacao__inside .quote {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 21px; }
+    @media (min-width: 75rem) {
+      .nossa-denominacao .nossa-denominacao__inside .quote {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 10px; } }
+  .nossa-denominacao .nossa-denominacao__inside .link {
+    font-size: 20px;
+    line-height: 23px; }
+  .nossa-denominacao .nossa-denominacao__inside .color-bg-try {
+    color: #e68559; }
+
 .button {
   border: none;
   font-style: normal;
