@@ -21,4 +21,5 @@ $(document).ready(function () {
 
   slide.init();
   navbar.init();
+  AOS.init();
 });
