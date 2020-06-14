@@ -548,6 +548,35 @@ body {
         font-size: 16px;
         line-height: 135.69%; }
 
+.contribua .contribua__inside h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 14px;
+  text-transform: uppercase; }
+  @media (min-width: 75rem) {
+    .contribua .contribua__inside h2 {
+      font-size: 36px;
+      line-height: 42px; } }
+
+.contribua .contribua__inside strong {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 14px;
+  display: block; }
+  @media (min-width: 75rem) {
+    .contribua .contribua__inside strong {
+      font-size: 24px;
+      line-height: 28px; } }
+
+.contribua .contribua__inside p {
+  font-size: 16px;
+  line-height: 19px; }
+  @media (min-width: 75rem) {
+    .contribua .contribua__inside p {
+      font-size: 20px;
+      line-height: 30px; } }
+
 .button {
   border: none;
   font-style: normal;
