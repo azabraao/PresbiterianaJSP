@@ -69,8 +69,12 @@ th {
   padding: 0;
   text-align: left; }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth; }
+
+body {
+  background-color: #f0f8ff; }
 
 .container {
   padding: 0 2rem;
@@ -234,6 +238,56 @@ html, body {
       opacity: 1; }
       .navbar .navbar__inside .navbar__menu.active .menu {
         padding: 0; } }
+
+.site-header {
+  padding-top: 20px;
+  padding-bottom: 290px;
+  background-image: url(../img/people.svg);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 670px;
+  margin-bottom: 100px; }
+  @media (min-width: 37.5rem) {
+    .site-header {
+      background-position: center bottom; } }
+  @media (min-width: 75rem) {
+    .site-header {
+      padding-left: 300px;
+      padding-top: 100px;
+      background-size: auto;
+      padding-bottom: 450px; } }
+  .site-header .site-header__inside {
+    color: #263b61;
+    font-family: Roboto, Rubik, sans-serif; }
+    .site-header .site-header__inside h1 {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 34px;
+      line-height: 40px; }
+      @media (min-width: 75rem) {
+        .site-header .site-header__inside h1 {
+          width: 700px;
+          font-size: 64px;
+          line-height: 75px; }
+          .site-header .site-header__inside h1 div {
+            display: inline; } }
+    .site-header .site-header__inside .paragraph {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 33px; }
+      @media (min-width: 75rem) {
+        .site-header .site-header__inside .paragraph {
+          font-size: 48px;
+          line-height: 56px;
+          width: 602px; }
+          .site-header .site-header__inside .paragraph div {
+            display: inline; } }
+
+.page-background.bg-1 {
+  background-image: url(../img/forma-1.svg);
+  background-repeat: no-repeat;
+  background-size: 30% 100%; }
 
 .bg-text {
   background-color: #263b61; }
