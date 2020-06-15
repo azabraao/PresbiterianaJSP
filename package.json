@@ -27,6 +27,7 @@
     "graceful-fs": "^4.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-image": "^6.1.0",
     "gulp-rename": "^2.0.0",

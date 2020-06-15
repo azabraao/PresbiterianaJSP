@@ -7,7 +7,15 @@ const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const uglifycss = require('gulp-uglifycss');
+const clean = require('gulp-clean');
 
+gulp.task('image', async () => {
+  gulp
+    .src('./assets/img/fixture/*')
+    .pipe(image())
+    .pipe(clean())
+    .pipe(gulp.dest('./assets/img/'));
+});
 gulp.task('image', async () => {
   gulp
     .src('./assets/img/fixture/*')
@@ -29,12 +37,12 @@ gulp.task('sass:build', async () => {
   gulp
     .src('./assets/scss/main.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./src/assets/scss/'))
+    .pipe(gulp.dest('./assets/scss/'))
     .pipe(sourcemaps.init())
     .pipe(autoprefixer())
     .pipe(concat('main.css'))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./src/assets/css/'))
+    .pipe(gulp.dest('./assets/css/'))
 
     .pipe(
       uglifycss({
@@ -42,7 +50,7 @@ gulp.task('sass:build', async () => {
       })
     )
     .pipe(rename('main.min.css'))
-    .pipe(gulp.dest('./src/assets/css/'));
+    .pipe(gulp.dest('./assets/css/'));
 });
 
 gulp.task('sass:watch', () => {
