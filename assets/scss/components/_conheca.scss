@@ -16,6 +16,21 @@
 
   .conheca__inside {
     .slide {
+      .slide__title {
+        h2 {
+          font-size: 24px;
+          line-height: 28px;
+          color: #f0f8ff;
+          margin-bottom: 15px;
+          text-transform: uppercase;
+          font-weight: bold;
+
+          @include for-desktop-up {
+            font-size: 36px;
+            line-height: 42px;
+          }
+        }
+      }
       .slide__items {
         .slide__item {
           padding: 0 2px;
@@ -24,19 +39,6 @@
           .slide__item-content {
             padding-bottom: 30px;
 
-            h3 {
-              font-size: 24px;
-              line-height: 28px;
-              color: #f0f8ff;
-              margin-bottom: 15px;
-              text-transform: uppercase;
-              font-weight: bold;
-
-              @include for-desktop-up {
-                font-size: 36px;
-                line-height: 42px;
-              }
-            }
             p {
               font-weight: 500;
               font-size: 16px;
@@ -50,51 +52,51 @@
               }
             }
           }
-          .slide__item-button {
-            .button {
-              margin-left: auto;
+        }
+      }
+      .slide__button {
+        .button {
+          margin-left: auto;
 
-              @include for-desktop-up {
-                position: relative;
-                top: -100px;
-              }
-            }
+          @include for-desktop-up {
+            position: relative;
+            top: -100px;
           }
         }
       }
-    }
-    .slide__dots {
-      .slick-dots {
-        position: relative;
-        top: -35px;
-        display: flex;
-        align-items: center;
-
-        li.slick-active {
-          button {
-            opacity: 1;
-          }
-        }
-        li {
+      .slide__dots {
+        .slick-dots {
+          position: relative;
           display: flex;
           align-items: center;
+          margin-bottom: 20px;
 
-          button {
-            outline: none;
-            border: none;
-            cursor: pointer;
-            font-size: 0;
-            background: #f0f8ff;
-            opacity: 0.5;
-            transform: matrix(1, 0, 0, -1, 0, 0);
-            border-radius: 50%;
-            width: 8px;
-            height: 11px;
-            margin-right: 7px;
+          li.slick-active {
+            button {
+              opacity: 1;
+            }
+          }
+          li {
+            display: flex;
+            align-items: center;
 
-            @include for-desktop-up {
-              width: 12px;
-              height: 12px;
+            button {
+              outline: none;
+              border: none;
+              cursor: pointer;
+              font-size: 0;
+              background: #f0f8ff;
+              opacity: 0.5;
+              transform: matrix(1, 0, 0, -1, 0, 0);
+              border-radius: 50%;
+              width: 8px;
+              height: 11px;
+              margin-right: 7px;
+
+              @include for-desktop-up {
+                width: 12px;
+                height: 12px;
+              }
             }
           }
         }

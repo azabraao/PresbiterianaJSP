@@ -25,6 +25,11 @@ $(document).ready(function () {
         arrows: false,
         appendDots: $('.jsSlideDots'),
         dots: true,
+        autoplay: true,
+        infinte: false,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
       });
     },
   };
