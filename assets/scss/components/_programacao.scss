@@ -2,12 +2,15 @@
   padding-top: 150px;
   padding-bottom: 100px;
   padding-left: 20px;
-  scroll-margin-top: -100px;
+  scroll-margin-top: -154px;
+  padding-top: 204px;
+  padding-left: 23px;
+  padding-bottom: 84.5px;
 
   @include for-desktop-up {
-    padding-left: 300px;
-    padding-top: 100px;
-    scroll-margin-top: -50px;
+    padding-top: 42px;
+    scroll-margin-top: 6px;
+    padding-left: 328px;
   }
 
   .programacao__inside {
@@ -16,18 +19,22 @@
       font-size: 24px;
       font-weight: bold;
       line-height: 28px;
-      margin-bottom: 30px;
+      margin-bottom: 42px;
 
       @include for-desktop-up {
         font-size: 36px;
         line-height: 42px;
+        margin-bottom: 28px;
       }
+    }
+    p.event {
+      margin-bottom: 23px;
     }
     p {
       font-size: 16px;
       line-height: 19px;
-      margin-bottom: 20px;
       max-width: 269px;
+      margin-bottom: 32px;
 
       @include for-desktop-up {
         max-width: 459px;
@@ -40,6 +47,7 @@
         font-weight: bold;
         font-size: 14px;
         line-height: 16px;
+        margin-bottom: -0.9px;
 
         @include for-desktop-up {
           font-size: 18px;
@@ -47,13 +55,18 @@
         }
       }
       time {
+        font-size: 14px;
         font-weight: 500;
         display: block;
+
+        @include for-desktop-up {
+          font-size: 18px;
+        }
       }
     }
 
     .button {
-      margin-top: 40px;
+      margin-top: 51px;
     }
   }
 }

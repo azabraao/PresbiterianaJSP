@@ -1,12 +1,13 @@
 .nossa-lideranca {
-  padding: 50px 0;
+  padding: 50px 0 133px;
 
   .nossa-lideranca__inside {
     .nossa-lideranca__header {
-      margin-bottom: 50px;
+      margin-bottom: 64px;
 
       @include for-desktop-up {
-        margin-bottom: 35px;
+        padding-top: 32px;
+        margin-bottom: 48px;
       }
 
       h2 {
@@ -14,6 +15,11 @@
         font-size: 24px;
         line-height: 28px;
         text-transform: uppercase;
+
+        @include for-desktop-up {
+          text-align: center;
+          font-size: 36px;
+        }
       }
     }
     .liderancas {
@@ -21,11 +27,16 @@
       justify-content: space-between;
       width: 100%;
       flex-wrap: wrap;
+      padding-left: 33px;
+
+      @include for-desktop-up {
+        justify-content: center;
+        padding-left: 0;
+      }
 
       .lideranca {
-        margin: 10px;
         margin-bottom: 30px;
-        width: 294px;
+        width: 318px;
         max-width: 100%;
 
         .lideranca__imagem:before {
@@ -50,20 +61,47 @@
           border: 2px solid $bg-try;
           margin-bottom: 26.61px;
           max-width: 90%;
+          margin-bottom: 31px;
+
+          @include for-desktop-up {
+            width: 308.51px;
+            height: 314px;
+            max-width: 100%;
+          }
         }
+
         .lideranca__titulo {
           h4 {
             font-weight: bold;
             font-size: 18px;
             line-height: 21px;
             margin-bottom: 12px;
+
+            @include for-desktop-up {
+              text-align: center;
+              font-size: 24px;
+              padding-top: 3px;
+            }
           }
         }
         .lideranca__content {
+          max-width: 278px;
+          margin-left: -2px;
+
+          @include for-desktop-up {
+            text-align: center;
+            padding-top: 4px;
+            max-width: 100%;
+          }
+
           p {
             font-weight: normal;
             font-size: 16px;
             line-height: 135.69%;
+
+            @include for-desktop-up {
+              font-size: 18px;
+            }
           }
         }
       }

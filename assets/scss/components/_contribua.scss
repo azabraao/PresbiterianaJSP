@@ -1,13 +1,16 @@
 .contribua {
   scroll-margin-top: 50px;
 
+  @include for-desktop-up {
+    margin-top: -7px;
+  }
   .contribua__inside {
     h2 {
       font-weight: bold;
       font-size: 24px;
       line-height: 28px;
-      margin-bottom: 14px;
       text-transform: uppercase;
+      margin-bottom: 0px;
 
       @include for-desktop-up {
         font-size: 36px;
@@ -23,15 +26,25 @@
       @include for-desktop-up {
         font-size: 24px;
         line-height: 28px;
+        padding-left: 1px;
+        margin-top: -1px;
+        margin-bottom: 28px;
       }
     }
+
+    p.church {
+      line-height: 19px;
+      margin-bottom: 2px;
+    }
+
     p {
       font-size: 16px;
-      line-height: 19px;
+      line-height: 26px;
 
       @include for-desktop-up {
         font-size: 20px;
         line-height: 30px;
+        padding-left: 4px;
       }
     }
   }

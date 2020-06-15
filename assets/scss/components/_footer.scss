@@ -1,9 +1,13 @@
 .footer {
-  padding: 39px 0;
+  padding: 28px 0 34px;
 
   .footer__inside {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+
+    @include for-desktop-up {
+      font-size: 18px;
+    }
   }
 }

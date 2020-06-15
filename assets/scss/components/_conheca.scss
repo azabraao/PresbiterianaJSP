@@ -2,21 +2,25 @@
   background-image: url(../img/forma-2-mob.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 100px 0;
   scroll-margin-top: -50px;
+  padding-top: 104px;
+  padding-bottom: 109px;
 
   @include for-desktop-up {
     background-image: url(../img/forma-2.png);
     background-size: 100% 1127.48px;
     background-repeat: no-repeat;
     background-position: center bottom;
-    padding-top: 200px;
     padding-bottom: 190px;
+    padding-top: 205px;
+    height: 710px;
   }
 
   .conheca__inside {
     .slide {
       .slide__title {
+        margin-bottom: 21px;
+
         h2 {
           font-size: 24px;
           line-height: 28px;
@@ -42,7 +46,7 @@
             p {
               font-weight: 500;
               font-size: 16px;
-              line-height: 141.69%;
+              line-height: 146.69%;
               color: #f0f8ff;
               max-width: 911px;
 
@@ -60,7 +64,7 @@
 
           @include for-desktop-up {
             position: relative;
-            top: -100px;
+            top: -137px;
           }
         }
       }
@@ -69,7 +73,9 @@
           position: relative;
           display: flex;
           align-items: center;
-          margin-bottom: 20px;
+          margin-bottom: 12px;
+          position: relative;
+          top: -12px;
 
           li.slick-active {
             button {

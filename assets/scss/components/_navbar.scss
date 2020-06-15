@@ -1,13 +1,14 @@
 .navbar {
-  padding-top: 50px;
   padding-bottom: 20px;
   position: relative;
   z-index: 1;
+  padding-top: 58px;
+  padding-left: 25px;
 
   .navbar__inside {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     .navbar__logo {
       strong {
@@ -17,6 +18,16 @@
         font-size: 18px;
         line-height: 21px;
         color: $text-color;
+
+        small {
+          font-size: 10px;
+          display: block;
+          line-height: 16px;
+
+          @include for-desktop-up {
+            font-size: 12px;
+          }
+        }
       }
     }
     .navbar__hamburguer.active {
@@ -166,8 +177,11 @@
 @include for-desktop-up {
   .navbar {
     padding-top: 80px;
+    padding-left: 0;
 
     .navbar__inside {
+      align-items: center;
+
       .navbar__logo {
         strong {
           font-size: 24px;
@@ -191,12 +205,16 @@
         .menu {
           padding: 0;
           width: auto;
+          width: 803px;
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 6px;
 
           .menu__link {
             text-align: center;
             margin-bottom: 0;
             position: static;
-            padding: 0 10px;
+            padding: 0;
             display: inline-block;
 
             a {
