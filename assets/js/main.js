@@ -2,6 +2,7 @@ $(document).ready(function () {
   const navbar = {
     init() {
       $('.jsHamburguer').on('click', navbar.handleHamburguerClick);
+      $('.jsMenuLink').on('click', navbar.closeMenu);
     },
     handleHamburguerClick() {
       $('.jsMenu').toggleClass('active');
@@ -10,6 +11,11 @@ $(document).ready(function () {
       document.body.style.overflowY === 'hidden'
         ? (document.body.style.overflowY = 'scroll')
         : (document.body.style.overflowY = 'hidden');
+    },
+    closeMenu() {
+      $('.jsMenu').removeClass('active');
+      $('.jsHamburguer').removeClass('active');
+      document.body.style.overflowY = 'scroll';
     },
   };
 
