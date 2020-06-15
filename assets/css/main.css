@@ -160,6 +160,9 @@ body {
       pointer-events: none;
       overflow: hidden;
       min-height: 100vh; }
+      @media (min-width: 75rem) {
+        .navbar .navbar__inside .navbar__menu {
+          min-height: 0; } }
       .navbar .navbar__inside .navbar__menu .menu {
         padding-top: 80px; }
         .navbar .navbar__inside .navbar__menu .menu .menu__link:nth-child(1) {

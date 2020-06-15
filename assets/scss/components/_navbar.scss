@@ -88,6 +88,10 @@
       overflow: hidden;
       min-height: 100vh;
 
+      @include for-desktop-up {
+        min-height: 0;
+      }
+
       .menu {
         padding-top: 80px;
 
