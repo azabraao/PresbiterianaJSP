@@ -26,6 +26,7 @@
         margin: 10px;
         margin-bottom: 30px;
         width: 294px;
+        max-width: 100%;
 
         .lideranca__imagem:before {
           content: '';
@@ -48,6 +49,7 @@
           border-radius: 10px;
           border: 2px solid $bg-try;
           margin-bottom: 26.61px;
+          max-width: 90%;
         }
         .lideranca__titulo {
           h4 {
