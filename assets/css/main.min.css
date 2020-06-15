@@ -304,7 +304,8 @@ body {
 .programacao {
   padding-top: 150px;
   padding-bottom: 100px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  scroll-margin-top: -100px; }
   @media (min-width: 75rem) {
     .programacao {
       padding-left: 300px;
@@ -344,54 +345,56 @@ body {
   .programacao .programacao__inside .button {
     margin-top: 40px; }
 
-.onde-estamos .onde-estamos__inside .onde-estamos__header {
-  padding-left: 20px;
-  padding-bottom: 30px; }
-  @media (min-width: 75rem) {
-    .onde-estamos .onde-estamos__inside .onde-estamos__header {
-      padding-left: 300px;
-      padding-bottom: 40px; } }
-  .onde-estamos .onde-estamos__inside .onde-estamos__header h2 {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 5px; }
+.onde-estamos {
+  scroll-margin-top: 50px; }
+  .onde-estamos .onde-estamos__inside .onde-estamos__header {
+    padding-left: 20px;
+    padding-bottom: 30px; }
     @media (min-width: 75rem) {
-      .onde-estamos .onde-estamos__inside .onde-estamos__header h2 {
-        font-size: 36px;
-        margin-bottom: 10px;
-        line-height: 42px; } }
-  .onde-estamos .onde-estamos__inside .onde-estamos__header p {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px; }
-    @media (min-width: 75rem) {
-      .onde-estamos .onde-estamos__inside .onde-estamos__header p {
-        font-size: 18px;
-        line-height: 21px; } }
-    .onde-estamos .onde-estamos__inside .onde-estamos__header p strong {
-      display: block;
-      font-weight: 500; }
+      .onde-estamos .onde-estamos__inside .onde-estamos__header {
+        padding-left: 300px;
+        padding-bottom: 40px; } }
+    .onde-estamos .onde-estamos__inside .onde-estamos__header h2 {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 5px; }
       @media (min-width: 75rem) {
-        .onde-estamos .onde-estamos__inside .onde-estamos__header p strong {
-          font-size: 24px;
-          line-height: 28px; } }
-
-.onde-estamos .onde-estamos__inside .onde-estamos__map {
-  width: 100%; }
-  .onde-estamos .onde-estamos__inside .onde-estamos__map iframe {
-    height: 371px;
-    width: 100%;
-    margin-bottom: -4px; }
-    @media (min-width: 75rem) {
-      .onde-estamos .onde-estamos__inside .onde-estamos__map iframe {
-        height: 471px; } }
+        .onde-estamos .onde-estamos__inside .onde-estamos__header h2 {
+          font-size: 36px;
+          margin-bottom: 10px;
+          line-height: 42px; } }
+    .onde-estamos .onde-estamos__inside .onde-estamos__header p {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px; }
+      @media (min-width: 75rem) {
+        .onde-estamos .onde-estamos__inside .onde-estamos__header p {
+          font-size: 18px;
+          line-height: 21px; } }
+      .onde-estamos .onde-estamos__inside .onde-estamos__header p strong {
+        display: block;
+        font-weight: 500; }
+        @media (min-width: 75rem) {
+          .onde-estamos .onde-estamos__inside .onde-estamos__header p strong {
+            font-size: 24px;
+            line-height: 28px; } }
+  .onde-estamos .onde-estamos__inside .onde-estamos__map {
+    width: 100%; }
+    .onde-estamos .onde-estamos__inside .onde-estamos__map iframe {
+      height: 371px;
+      width: 100%;
+      margin-bottom: -4px; }
+      @media (min-width: 75rem) {
+        .onde-estamos .onde-estamos__inside .onde-estamos__map iframe {
+          height: 471px; } }
 
 .conheca {
   background-image: url(../img/forma-2-mob.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding: 100px 0; }
+  padding: 100px 0;
+  scroll-margin-top: -50px; }
   @media (min-width: 75rem) {
     .conheca {
       background-image: url(../img/forma-2.png);
@@ -555,34 +558,34 @@ body {
         font-size: 16px;
         line-height: 135.69%; }
 
-.contribua .contribua__inside h2 {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  margin-bottom: 14px;
-  text-transform: uppercase; }
-  @media (min-width: 75rem) {
-    .contribua .contribua__inside h2 {
-      font-size: 36px;
-      line-height: 42px; } }
-
-.contribua .contribua__inside strong {
-  font-size: 18px;
-  line-height: 21px;
-  margin-bottom: 14px;
-  display: block; }
-  @media (min-width: 75rem) {
-    .contribua .contribua__inside strong {
-      font-size: 24px;
-      line-height: 28px; } }
-
-.contribua .contribua__inside p {
-  font-size: 16px;
-  line-height: 19px; }
-  @media (min-width: 75rem) {
-    .contribua .contribua__inside p {
-      font-size: 20px;
-      line-height: 30px; } }
+.contribua {
+  scroll-margin-top: 50px; }
+  .contribua .contribua__inside h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 14px;
+    text-transform: uppercase; }
+    @media (min-width: 75rem) {
+      .contribua .contribua__inside h2 {
+        font-size: 36px;
+        line-height: 42px; } }
+  .contribua .contribua__inside strong {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 14px;
+    display: block; }
+    @media (min-width: 75rem) {
+      .contribua .contribua__inside strong {
+        font-size: 24px;
+        line-height: 28px; } }
+  .contribua .contribua__inside p {
+    font-size: 16px;
+    line-height: 19px; }
+    @media (min-width: 75rem) {
+      .contribua .contribua__inside p {
+        font-size: 20px;
+        line-height: 30px; } }
 
 .contato {
   background-image: url(../img/forma-3.png);

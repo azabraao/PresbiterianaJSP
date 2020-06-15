@@ -3,6 +3,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 100px 0;
+  scroll-margin-top: -50px;
 
   @include for-desktop-up {
     background-image: url(../img/forma-2.png);
