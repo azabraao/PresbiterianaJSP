@@ -62,11 +62,17 @@
       a {
         img {
           margin-right: 15px;
+          transition: 0.3s;
 
           @include for-desktop-up {
             margin-right: 18px;
           }
         }
+
+        img:active {
+          transform: scale(0.95);
+        }
+
         .logo-instagram,
         .logo-facebook {
           width: 30px;

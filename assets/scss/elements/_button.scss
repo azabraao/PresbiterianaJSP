@@ -9,6 +9,8 @@
   justify-content: center;
   border-radius: 5px;
   color: #f0f8ff;
+  transition: 0.3s;
+  cursor: pointer;
 
   @include for-desktop-up {
     border-radius: 10px;
@@ -50,4 +52,13 @@
   box-sizing: border-box;
   border-radius: 2px;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.button--outlined:hover {
+  background: #f0f8ff;
+  color: #e68559;
+}
+
+.button:active {
+  transform: scale(0.97);
 }

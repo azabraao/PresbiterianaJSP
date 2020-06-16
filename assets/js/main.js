@@ -22,10 +22,12 @@ $(document).ready(function () {
   const slide = {
     init() {
       $('.jsSlide').slick({
-        arrows: false,
+        arrows: true,
+        prevArrow: $('.jsPrevSlide'),
+        nextArrow: $('.jsNextSlide'),
         appendDots: $('.jsSlideDots'),
         dots: true,
-        autoplay: true,
+        autoplay: false,
         infinte: false,
         pauseOnFocus: true,
         pauseOnHover: true,

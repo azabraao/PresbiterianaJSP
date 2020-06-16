@@ -36,6 +36,10 @@
         }
       }
       .slide__items {
+        @include for-desktop-up {
+          width: 900px;
+        }
+
         .slide__item {
           padding: 0 2px;
           outline: none;

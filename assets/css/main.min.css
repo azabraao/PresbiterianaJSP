@@ -78,6 +78,9 @@ body {
   font-family: Roboto, Rubik, sans-serif;
   color: #263b61; }
 
+* {
+  outline: none; }
+
 .container {
   padding: 0 2rem;
   margin: 0 auto;
@@ -451,6 +454,9 @@ body {
         .conheca .conheca__inside .slide .slide__title h2 {
           font-size: 36px;
           line-height: 42px; } }
+  @media (min-width: 75rem) {
+    .conheca .conheca__inside .slide .slide__items {
+      width: 900px; } }
   .conheca .conheca__inside .slide .slide__items .slide__item {
     padding: 0 2px;
     outline: none; }
@@ -722,10 +728,13 @@ body {
         .contato .contato__inside .contato__social {
           margin-top: 30px; } }
       .contato .contato__inside .contato__social a img {
-        margin-right: 15px; }
+        margin-right: 15px;
+        transition: 0.3s; }
         @media (min-width: 75rem) {
           .contato .contato__inside .contato__social a img {
             margin-right: 18px; } }
+      .contato .contato__inside .contato__social a img:active {
+        transform: scale(0.95); }
       .contato .contato__inside .contato__social a .logo-instagram,
       .contato .contato__inside .contato__social a .logo-facebook {
         width: 30px; }
@@ -759,7 +768,9 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  color: #f0f8ff; }
+  color: #f0f8ff;
+  transition: 0.3s;
+  cursor: pointer; }
   @media (min-width: 75rem) {
     .button {
       border-radius: 10px;
@@ -795,6 +806,13 @@ body {
   box-sizing: border-box;
   border-radius: 2px;
   background-color: rgba(0, 0, 0, 0); }
+
+.button--outlined:hover {
+  background: #f0f8ff;
+  color: #e68559; }
+
+.button:active {
+  transform: scale(0.97); }
 
 .bg-text {
   background-color: #263b61; }
