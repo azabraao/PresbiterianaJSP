@@ -56,7 +56,8 @@
           position: relative;
           height: 294px;
           display: block;
-          background: #d5d5d5;
+          background-size: cover;
+          background-image: url(../img/lider-1.svg);
           border-radius: 10px;
           border: 2px solid $bg-try;
           margin-bottom: 26.61px;
